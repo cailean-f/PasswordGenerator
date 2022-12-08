@@ -16,22 +16,26 @@ public class PasswordGenerator {
             System.out.println("BAD ENTRY");
         }
         System.out.println("Does your password need to include upper case?(Y for yes. N for no)");
+
         if(input.hasNext()){
-            if(input.next().charAt(0) == 'y'|| input.next().charAt(0) == 'Y'){
+            char a = input.next().charAt(0);
+            if(a == 'y'|| a == 'Y'){
                 System.out.println("Got it!");
                 needUpperCase = true;
-            } else if(input.next().charAt(0) == 'N' || input.next().charAt(0) == 'n'){
+            } else if(a == 'N' || a == 'n'){
                 System.out.println("Got it!");
             }
         }else {
             System.out.println("BAD ENTRY");
         }
         System.out.println("Does your password need to include special characters?(Y for yes. N for no)");
+
         if(input.hasNext()) {
-            if (input.next().charAt(0) == 'y' || input.next().charAt(0) == 'Y' ) {
+            char b = input.next().charAt(0);
+            if (b == 'y' || b == 'Y' ) {
                 System.out.println("Got it!");
                 needSpecialCharacter = true;
-            } else if (input.next().charAt(0) == 'n' || input.next().charAt(0) == 'N' ) {
+            } else if (b == 'n' || b == 'N' ) {
                 System.out.println("Got it!");
             }
         } else {
